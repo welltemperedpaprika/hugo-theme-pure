@@ -1,10 +1,12 @@
 <script>
   MathJax = {
+    loader: {load: ['[tex]/mhchem']},
     tex: {
       inlineMath: [['$', '$'], ['\\(', '\\)']],
       displayMath: [['$$','$$'], ['\\[', '\\]']],
       processEscapes: true,
       processEnvironments: true
+      packages: {'[+]': ['mhchem']}
     },
     options: {
       skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
