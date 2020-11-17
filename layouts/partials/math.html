@@ -1,12 +1,11 @@
 <script>
   MathJax = {
-    loader: {load: ['[tex]/mhchem'], ['[tex]/braket']},
+    loader: {load: ['[tex]/mhchem']},
     tex: {
       inlineMath: [['$', '$'], ['\\(', '\\)']],
       displayMath: [['$$','$$'], ['\\[', '\\]']],
       processEscapes: true,
-      processEnvironments: true,
-      packages: {'[+]': ['braket']}
+      processEnvironments: true
     },
     options: {
       skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
